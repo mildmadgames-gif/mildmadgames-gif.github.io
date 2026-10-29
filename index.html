@@ -1,1 +1,153 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Mild Mad Games</title></head><body><h1>Mild Mad Games</h1><p>Indie developer of <a href="https://play.google.com/store/apps/details?id=com.mildmadgames.savemisu">SaveMisu: Budget &amp; Savings</a>.</p><p><a href="https://mildmadgames-gif.github.io/savemisu-privacy/">Privacy policy</a> - mildmadgames@gmail.com</p></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mild Mad Games · SaveMisu: Budget &amp; Savings</title>
+<meta name="description" content="Mild Mad Games is an indie developer. Meet SaveMisu: a cute, offline budget &amp; savings tracker for Android where Misu reacts to your spending.">
+<meta name="theme-color" content="#FFB7C5">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mild Mad Games">
+<meta property="og:title" content="SaveMisu: Budget &amp; Savings · by Mild Mad Games">
+<meta property="og:description" content="A cute, offline budget tracker. Misu reacts to your spending. No account, your data stays on your phone.">
+<meta property="og:url" content="https://mildmadgames-gif.github.io/">
+<meta property="og:image" content="https://mildmadgames-gif.github.io/assets/og-image.jpg">
+<meta property="og:image:width" content="1024"><meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--pink:#FFB7C5;--mint:#A8E6CF;--sky:#A8D8FF;--peach:#FFC9A3;--ink:#2D2A32;--slate:#6B6570;--mist:#F7F4F8;--line:#E8E2EA;--berry:#E87A9A;--green:#2E9E7A}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:ui-rounded,"SF Pro Rounded","Nunito","Quicksand",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--mist);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:10;background:rgba(247,244,248,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;letter-spacing:.2px;font-size:1.08rem}
+.brand img{width:38px;height:38px;border-radius:11px}
+nav a{text-decoration:none;font-weight:700;font-size:.92rem;color:var(--slate);margin-left:18px}
+nav a:hover{color:var(--berry)}
+.hero{position:relative;overflow:hidden;padding:44px 0 56px;background:radial-gradient(circle at 12% 18%,#fff 0 60px,transparent 61px),radial-gradient(circle at 88% 80%,rgba(255,255,255,.55) 0 90px,transparent 91px),linear-gradient(160deg,#FFE3EA 0%,#FFF1E6 45%,#E3F7EE 100%)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px 6px 6px;font-weight:700;font-size:.85rem;box-shadow:0 4px 14px rgba(232,122,154,.12)}
+.pill img{width:28px;height:28px;border-radius:8px}
+h1{font-size:clamp(2.1rem,5.4vw,3.4rem);line-height:1.08;margin:16px 0 12px;letter-spacing:-.5px}
+h1 .hl{background:linear-gradient(transparent 62%,var(--mint) 62%);padding:0 4px;border-radius:4px}
+.tag{font-size:1.12rem;color:var(--slate);max-width:32em;margin:0 0 22px}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
+.cta .badge img{height:64px;width:auto;margin:-8px}
+.cta small{color:var(--slate);font-weight:600}
+.misu{position:relative;justify-self:center;width:min(100%,340px)}
+.misu::before{content:"";position:absolute;inset:12% 4% 4%;background:#fff;border-radius:50%;box-shadow:0 18px 50px rgba(232,122,154,.25)}
+.misu img{position:relative;width:100%;height:auto;animation:bob 4s ease-in-out infinite}
+.bubble{position:absolute;top:6%;right:-4%;background:#fff;border-radius:18px 18px 18px 4px;padding:8px 14px;font-weight:800;font-size:.95rem;box-shadow:0 6px 18px rgba(45,42,50,.1)}
+@keyframes bob{50%{transform:translateY(-8px)}}
+@media (prefers-reduced-motion:reduce){.misu img{animation:none}}
+section{padding:56px 0}
+h2{font-size:clamp(1.6rem,3.6vw,2.2rem);margin:0 0 6px;text-align:center}
+.sub{text-align:center;color:var(--slate);margin:0 auto 30px;max-width:34em}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:0 6px 20px rgba(45,42,50,.05)}
+.card .ic{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;font-size:1.5rem;margin-bottom:12px}
+.card h3{margin:0 0 6px;font-size:1.1rem}
+.card p{margin:0;color:var(--slate);font-size:.96rem}
+.shots-bg{background:linear-gradient(180deg,var(--mist),#FFF0F3)}
+.shots{display:flex;gap:18px;justify-content:center;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 20px;padding:6px 20px 18px;margin:0 -20px}
+.shots img{flex:0 0 auto;width:200px;height:auto;border-radius:22px;border:6px solid #fff;box-shadow:0 12px 30px rgba(45,42,50,.14);scroll-snap-align:start}
+.about{background:#fff;border:1px solid var(--line);border-radius:28px;padding:30px;display:flex;gap:22px;align-items:center;box-shadow:0 6px 20px rgba(45,42,50,.05)}
+.about img{width:84px;height:84px;border-radius:22px;flex:none}
+.about h2{text-align:left}
+.about p{margin:0;color:var(--slate)}
+.soon{display:inline-block;margin-top:10px;background:var(--mint);color:#1f5a47;border-radius:999px;padding:4px 12px;font-size:.85rem;font-weight:800}
+footer{background:var(--ink);color:#E8E2EA;padding:34px 0 40px;margin-top:20px;border-radius:32px 32px 0 0}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px 28px;justify-content:space-between;align-items:center}
+footer .brand img{width:32px;height:32px}
+footer ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px}
+footer a{text-decoration:none;font-weight:700}
+footer a:hover{color:var(--pink)}
+footer .copy{width:100%;color:#BFB5C8;font-size:.88rem}
+@media (max-width:760px){
+ nav{display:none}
+ .hero{padding:28px 0 40px}
+ .hero .wrap{grid-template-columns:1fr;text-align:center}
+ .tag{margin-left:auto;margin-right:auto}
+ .cta{justify-content:center;flex-direction:column;gap:6px}
+ .misu{width:250px;grid-row:1}
+ .cards{grid-template-columns:1fr}
+ .shots{justify-content:flex-start}
+ .shots img{width:66vw;max-width:240px}
+ .about{flex-direction:column;text-align:center}
+ .about h2{text-align:center}
+ section{padding:44px 0}
+}
+@media (min-width:761px) and (max-width:960px){.cards{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+ <a class="brand" href="#top"><img src="assets/mmg-logo.webp" width="38" height="38" alt="Mild Mad Games logo">Mild Mad Games</a>
+ <nav><a href="#features">Features</a><a href="#screens">Screens</a><a href="#about">About</a></nav>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+ <div>
+  <span class="pill"><img src="assets/savemisu-icon.webp" width="28" height="28" alt="">SaveMisu · Budget &amp; Savings</span>
+  <h1>Saving money is cuter <span class="hl">with Misu</span></h1>
+  <p class="tag">A cozy budget tracker for Android. Log expenses, grow your savings goals and watch Misu cheer you on, all offline, with no account.</p>
+  <div class="cta">
+   <a class="badge" href="https://play.google.com/store/apps/details?id=com.mildmadgames.savemisu"><img src="assets/google-play-badge.png" width="166" height="64" alt="Get it on Google Play"></a>
+   <small>Free on Android</small>
+  </div>
+ </div>
+ <div class="misu"><img src="assets/misu-happy.webp" width="360" height="480" alt="Misu, a chibi girl in a mint sweatshirt with a piggy-bank print"><span class="bubble">Yay, +€5 saved!</span></div>
+</div></section>
+
+<section id="features"><div class="wrap">
+ <h2>Budgeting, but make it cute</h2>
+ <p class="sub">Everything you need to keep your money happy, and a little friend who notices.</p>
+ <div class="cards">
+  <div class="card"><div class="ic" style="background:#FFE3EA">💖</div><h3>Misu reacts to you</h3><p>Spend wisely and Misu beams. Overspend and she might need a hug.</p></div>
+  <div class="card"><div class="ic" style="background:#E3F7EE">🔒</div><h3>Private &amp; offline</h3><p>No account, no sign-up. Your data stays on your phone.</p></div>
+  <div class="card"><div class="ic" style="background:#E6F3FF">🎯</div><h3>Goals &amp; missions</h3><p>Set savings goals, complete missions and keep your streak going.</p></div>
+  <div class="card"><div class="ic" style="background:#FFF1E6">📊</div><h3>Clear reports</h3><p>See where your money goes at a glance, in multiple currencies.</p></div>
+  <div class="card"><div class="ic" style="background:#F1EAF6">👗</div><h3>Misu's wardrobe</h3><p>Unlock cute outfits and accessories as you build good habits.</p></div>
+  <div class="card"><div class="ic" style="background:#E9E6EE">🌙</div><h3>Dark theme</h3><p>Easy on the eyes for late-night budgeting.</p></div>
+ </div>
+</div></section>
+
+<section id="screens" class="shots-bg"><div class="wrap">
+ <h2>Take a peek</h2>
+ <p class="sub">Straight from the app.</p>
+ <div class="shots">
+  <img src="assets/shot-1_home.webp" width="360" height="800" loading="lazy" alt="SaveMisu home screen">
+  <img src="assets/shot-4_missions.webp" width="360" height="800" loading="lazy" alt="Missions screen">
+  <img src="assets/shot-5_wardrobe.webp" width="360" height="800" loading="lazy" alt="Misu's wardrobe">
+  <img src="assets/shot-8_dark_home.webp" width="360" height="800" loading="lazy" alt="Home screen in dark theme">
+ </div>
+</div></section>
+
+<section id="about"><div class="wrap">
+ <div class="about">
+  <img src="assets/mmg-logo.webp" width="84" height="84" alt="">
+  <div><h2>About the studio</h2>
+  <p>Mild Mad Games is a tiny indie studio making small, friendly apps with a lot of heart. SaveMisu is our first one.</p>
+  <span class="soon">✨ More from Misu coming soon</span></div>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+ <a class="brand" href="#top"><img src="assets/mmg-logo.webp" width="32" height="32" alt="">Mild Mad Games</a>
+ <ul>
+  <li><a href="https://mildmadgames-gif.github.io/savemisu-privacy/">Privacy policy</a></li>
+  <li><a href="mailto:mildmadgames@gmail.com">mildmadgames@gmail.com</a></li>
+  <li><a href="https://play.google.com/store/apps/details?id=com.mildmadgames.savemisu">Google Play</a></li>
+ </ul>
+ <div class="copy">© 2026 Mild Mad Games. Google Play and the Google Play logo are trademarks of Google LLC.</div>
+</div></footer>
+</body>
+</html>
